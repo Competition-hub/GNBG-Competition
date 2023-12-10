@@ -171,7 +171,7 @@ article h1 {
     margin: 38px auto;
     box-shadow: 0 0 1px 1px rgb(0 0 0 / 13%) !important;
     max-width: 600px;
-    color: red;
+    /* color: red; */
     font-weight: bold;
 }
 
@@ -191,4 +191,12 @@ article h1 {
 
 li{
     margin-block: 1rem;
+}
+
+figure img{
+    max-width: 47%;
+}
+
+figcaption{
+    margin-top: 2rem;
 }
