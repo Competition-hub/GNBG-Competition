@@ -209,3 +209,8 @@ figcaption{
 #logo img{
     max-width: 100px;
 }
+
+#ref {
+    color: grey;
+    margin-top: 30px;
+}
