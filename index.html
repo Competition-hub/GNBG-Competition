@@ -219,6 +219,42 @@
 
         <article>
             <header>
+                <h1>Rules and Details:</h1>
+            </header>
+            <ul style="list-style: circle;" id="rules">
+                <li>
+                    The competition is open to all researchers and practitioners in the field of continuous numerical optimization.
+                </li>
+                <li>
+                    Competitors can participate with either newly proposed algorithms (unpublished) or their previously published algorithms.
+                </li>
+                <li>
+                    Winners and runners-up will receive certificates from the conference.
+                </li>
+                <li>
+                    It is not required to attend the conference or register in order to participate in the competition.
+                </li>
+                <li>
+                    No modifications are permitted to parameter settings of the instances in the '.mat' files.
+                </li>
+                <li>
+                    Algorithms' parameter values must be consistent across all problem instances. Parameter tuning
+                    tailored for individual instances is prohibited.
+                </li>
+                <li>
+                    Problem instances must be treated as blackboxes. Direct use of GNBG's internal parameters in
+                    algorithms
+                    is forbidden.
+                </li>
+                <li>
+                    Winners will be required to share their algorithm's source code for result verification. This code will remain confidential and won't be published.
+                </li>                
+            </ul>
+        </article>
+
+
+        <article>
+            <header>
                 <h1>
                     Evaluation Criteria
                 </h1>
@@ -254,283 +290,183 @@
                 </li>
             </ol>
         </article>
+
         <article>
             <header>
-                <h1>Rules and Compliance:</h1>
+                <h1>
+                    Submission Instructions
+                </h1>
             </header>
-            <ul style="list-style: circle;" id="rules">
+            <p>
+                Participants are required to submit a compressed folder, labeled with the name of their algorithm,
+                containing the following elements:
+            </p>
+            <ul>
                 <li>
-                    Participants will run their algorithm 31 times for each problem instance.
+                    Documentation File: This document should include:
+                    <ul style="list-style: circle;">
+                        <li>
+                            Title of the Submission.
+                        </li>
+                        <li>
+                            Names, affiliations, and email addresses of all team members.
+                        </li>
+                        <li>
+                            A concise description of the algorithm.
+                        </li>
+                        <li>
+                            A table presenting the mean and standard deviation of absolute errors and required FEs to
+                            reach the acceptance threshold, based on 31 runs for each problem instance.
+                            <table style="border-collapse: collapse;">
+                                <tr>
+                                    <td rowspan="2">
+                                        Criteria
+                                    </td>
+                                    <td colspan="6">
+                                        Problem instances
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        F1
+                                    </td>
+                                    <td>
+                                        F2
+                                    </td>
+                                    <td>
+                                        F3
+                                    </td>
+                                    <td>
+                                        ...
+                                    </td>
+                                    <td>
+                                        F23
+                                    </td>
+                                    <td>
+                                        F24
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        absolute error (mean and standard deviation)
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        ...
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Required <b>FEs to Acceptance Threshold</b> (mean and standard deviation)
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        ...
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Success rate
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        ...
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    No modifications are permitted to parameter settings of the instances in the .mat files and
-                    “fitness.m”
-                    in the provided source code.
+                    Result Files: The folder should also contain 24 text files (one for each problem instance, e.g.,
+                    “f10.dat”). Each file must detail the results of 31 runs, organized in two columns representing the
+                    absolute error and required FEs to reach the acceptance threshold, respectively.
                 </li>
-                <li>
-                    Algorithms' parameter values must be consistent across all problem instances. Parameter tuning
-                    tailored for individual instances is prohibited.
-                </li>
-                <li>
-                    Problem instances must be treated as blackboxes. Direct use of GNBG's internal parameters in
-                    algorithms
-                    is forbidden.
-                </li>
-                <li>
-                    Winners will be required to share their algorithm's source code for result verification. This code
-                    <!DOCTYPE html>
-                    <html>
-
-                    <head>
-                        <title>Competition Website</title>
-                        <style>
-                            /* Add underline to email addresses and links */
-                            a,
-                            span {
-                                text-decoration: underline;
-                            }
-                        </style>
-                    </head>
-
-                    <body>
-                        <main>
-                            <article>
-                                <header>
-                                    <h1>
-                                        Competition Details
-                                    </h1>
-                                </header>
-                                <ul>
-                                    <li>
-                                        The competition is open to all researchers and practitioners in the field of continuous numerical
-                                        optimization.
-                                    </li>
-                                    <li>
-                                        Submissions will remain confidential and won't be published.
-                                    </li>
-                                    <li>
-                                        Competitors can participate with either newly proposed algorithms (unpublished) or their previously
-                                        published algorithms.
-                                    </li>
-                                    <li>
-                                        It is not required to attend the conference or register in order to participate in the competition.
-                                    </li>
-                                </ul>
-                            </article>
-
-                            <article>
-                                <header>
-                                    <h1>
-                                        Submission Instructions
-                                    </h1>
-                                </header>
-                                <p>
-                                    Participants are required to submit a compressed folder, labeled with the name of their algorithm,
-                                    containing the following elements:
-                                </p>
-                                <ul>
-                                    <li>
-                                        Documentation File: This document should include:
-                                        <ul style="list-style: circle;">
-                                            <li>
-                                                Title of the Submission.
-                                            </li>
-                                            <li>
-                                                Names, affiliations, and email addresses of all team members.
-                                            </li>
-                                            <li>
-                                                A concise description of the algorithm.
-                                            </li>
-                                            <li>
-                                                o A table presenting the mean and standard deviation of absolute errors and required FEs to
-                                                reach the acceptance threshold, based on 31 runs for each problem instance.
-                                                <table style="border-collapse: collapse;">
-                                                    <tr>
-                                                        <td rowspan="2">
-                                                            Criteria
-                                                        </td>
-                                                        <td colspan="6">
-                                                            Problem instances
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            F1
-                                                        </td>
-                                                        <td>
-                                                            F2
-                                                        </td>
-                                                        <td>
-                                                            F3
-                                                        </td>
-                                                        <td>
-                                                            ...
-                                                        </td>
-                                                        <td>
-                                                            F23
-                                                        </td>
-                                                        <td>
-                                                            F24
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            absolute error (mean and standard deviation)
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-                                                            ...
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            Required <b>FEs to Acceptance Threshold</b> (mean and standard deviation)
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-                                                            ...
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            Success rate
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-                                                            ...
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                        <td>
-
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        Result Files: The folder should also contain 24 text files (one for each problem instance, e.g.,
-                                        “f10.dat”). Each file must detail the results of 31 runs, organized in two columns representing the
-                                        absolute error and required FEs to reach the acceptance threshold, respectively.
-                                    </li>
-                                </ul>
-                                <p>
-                                    These detailed individual run results will be utilized for a thorough statistical analysis to ascertain
-                                    the winners.
-                                </p>
-                                <p>
-                                    Please ensure that all files are named appropriately and correspond to the respective problem instances.
-                                    The accuracy and completeness of this data are crucial for a fair and comprehensive evaluation of all
-                                    entries.
-                                </p>
-                            </article>
-                            <article>
-                                <header>
-                                    <h1>
-                                        Weightage for Decision:
-                                    </h1>
-                                </header>
-                                <ul style="list-style: circle;">
-                                    <li>
-                                        Different problem categories will carry varying weights in the final decision.
-                                    </li>
-                                    <li>
-                                        Multi-component multimodal problems will have the highest weight, followed by single-component
-                                        multimodal problems, and then unimodal problems with the least weight.
-                                    </li>
-                                </ul>
-                                <div>
-                                    <article class="imprtnt">
-                                        <!-- <header>
-                                            <h1>
-                                                Box 3:
-                                            </h1>
-                                        </header> -->
-                                        <p>
-                                            <b>
-                                                For inquiries or further clarification regarding the competition, feel free to reach out to
-                                                <span><a href="mailto:danial.yazdani@gmail.com">Danial Yazdani</a></span>. Your questions are welcome at <a
-                                                    href="mailto:danial.yazdani@gmail.com">danial.yazdani@gmail.com</a>.
-                                            </b>
-                                        </p>
-                                    </article>
-                                    <article class="imprtnt">
-                                        <!-- <header>
-                                            <h1>
-                                                Box 4:
-                                            </h1>
-                                        </header> -->
-                                        <p>
-                                            <!-- <b>
-                                                Please submit your competition files to Danial Yazdani via email at <a
-                                                    href="mailto: danial.yazdani@gmail.com">danial.yazdani@gmail.com</a> by
-                                                30 June 2024. Upon submission, you will receive an acknowledgment confirming the receipt of
-                                                your
-                                                files.
-                                            </b> -->
-                                            <b>
-                                                Please submit your competition files via email to both Amir Gandomi (<a
-                                                    href="mailto:Gandomi@uts.edu.au">Gandomi@uts.edu.au</a>) and
-                                                Danial Yazdani (<a href="mailto:danial.yazdani@gmail.com">danial.yazdani@gmail.com</a>).
-                                                Ensure to include both email addresses in a
-                                                single email to streamline the submission process. The deadline for submission is 30 June
-                                                2024. Upon submission, you will receive an acknowledgement from us confirming the
-                                                receipt of your files.
-                                            </b>
-                                        </p>
-                                    </article>
-                                </div>
-                            </article>
-
-                            <article id="ref">
-                                <h1>
-                                    References
-                                </h1>
-
-                                <p>
-                                    <span id="r1" style="color: blue; text-decoration: underline;"><a href="https://arxiv.org/abs/2312.07083">[1] Danial Yazdani, Mohammad Nabi Omidvar, Delaram Yazdani, Kalyanmoy Deb, Amir H. Gandomi, "GNBG: A Generalized and Configurable Benchmark Generator for Continuous Numerical Optimization," arXiv preprint arXiv:2312.07083, 2023.</a></span>
-                                </p>
-                            </article>
-                        </main>
-
-                    </body>
-
-                    </html>
+            </ul>
+            <p>
+                These detailed individual run results will be utilized for a thorough statistical analysis to ascertain
+                the winners.
+            </p>
+            <p>
+                Please ensure that all files are named appropriately and correspond to the respective problem instances.
+                The accuracy and completeness of this data are crucial for a fair and comprehensive evaluation of all
+                entries.
+            </p>
+        </article>
+                                                <article>
+                                                    <header>
+                                                        <h1>Weightage for Decision</h1>
+                                                    </header>
+                                                    <ul style="list-style: circle;">
+                                                        <li>
+                                                            Different problem categories will carry varying weights in the final decision.
+                                                        </li>
+                                                        <li>
+                                                            Multi-component multimodal problems will have the highest weight, followed by single-component multimodal problems, and then unimodal problems with the least weight.
+                                                        </li>
+                                                    </ul>
+                                                </article>
+                                                <div>
+                                                    <article class="imprtnt">
+                                                        <p>
+                                                            <b>For inquiries or further clarification regarding the competition, feel free to reach out to <a href="mailto:danial.yazdani@gmail.com">Danial Yazdani</a>.</b>
+                                                        </p>
+                                                    </article>
+                                                    <article class="imprtnt">
+                                                        <p>
+                                                            <b>Please submit your competition files via email to both Danial Yazdani (<a href="mailto:danial.yazdani@gmail.com">danial.yazdani@gmail.com</a>) and Amir Gandomi (<a href="mailto:Gandomi@uts.edu.au">Gandomi@uts.edu.au</a>).
+                                                                Ensure to include both email addresses in a single email to streamline the submission process. The deadline for submission is 30 June 2024. Upon submission, you will receive an acknowledgement from us confirming the receipt of your files.</b>
+                                                        </p>
+                                                    </article>
+                                                </div>
+                                                <article id="ref">
+                                                    <h1>References</h1>
+                                                    <p>
+                                                        <span id="r1" style="color: blue; text-decoration: underline;"><a href="https://arxiv.org/abs/2312.07083">[1] Danial Yazdani, Mohammad Nabi Omidvar, Delaram Yazdani, Kalyanmoy Deb, Amir H. Gandomi, "GNBG: A Generalized and Configurable Benchmark Generator for Continuous Numerical Optimization," arXiv preprint arXiv:2312.07083, 2023.</a></span>
+                                                    </p>
+                                                </article>
+                                            </main>
+                                        </body>
+                                        </html>
